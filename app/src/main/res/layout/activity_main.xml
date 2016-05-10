@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/layout_divider"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cheese Burger"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="33dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="338dp"
+        android:layout_height="139dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:text="5000 Calories \n10g Protein \n30g Carbs"
+            android:layout_gravity="center_vertical"
+            android:textSize="20dp"
+            android:background="@drawable/textviewborder"
+            android:layout_marginRight="16dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="right"
+            android:src="@drawable/hamburger" />
+    </LinearLayout>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_gravity="center_horizontal" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:id="@android:id/list"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.96"
+        android:divider="@drawable/listview_divider"
+        android:dividerHeight="1dp"
+        android:scrollIndicators="top|bottom|right"
+        android:background="@drawable/textviewborder"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_gravity="center_horizontal"
+        android:hint="Leave a review" />
+
+</LinearLayout>

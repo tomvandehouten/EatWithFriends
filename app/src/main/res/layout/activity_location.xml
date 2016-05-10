@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/layout_divider"
+    >
+    tools:context="com.example.derek.eatwithfriends2.LocationActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sadler Center"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="33dp"
+        android:background="@drawable/sadlercenter"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:id="@android:id/list"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.96"
+        android:divider="@drawable/listview_divider"
+        android:dividerHeight="1dp"
+        android:scrollIndicators="top|bottom|right"
+        android:background="@drawable/textviewborder"
+        />
+</LinearLayout>

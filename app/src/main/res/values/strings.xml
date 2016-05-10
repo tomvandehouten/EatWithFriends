@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EatWithFriends</string>
+    <string-array name="items">
+        <item></item>
+        <item>Message</item>
+        <item>View Profile</item>
+        <item>Invite to Meal</item>
+    </string-array>
+</resources>

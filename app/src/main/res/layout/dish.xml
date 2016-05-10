@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/dishImageView"
+        android:layout_width="91dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DishName"
+        android:id="@+id/dishNameTextView"
+        android:layout_alignTop="@+id/dishImageView"
+        android:layout_toRightOf="@+id/dishImageView"
+        android:layout_toEndOf="@+id/dishImageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="# Calories"
+        android:id="@+id/caloriesTextView"
+        android:layout_below="@+id/dishNameTextView"
+        android:layout_toRightOf="@+id/dishImageView"
+        android:layout_toEndOf="@+id/dishImageView" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/dishModifierImageView"
+        android:layout_alignBottom="@+id/dishImageView"
+        android:layout_alignLeft="@+id/caloriesTextView"
+        android:layout_alignStart="@+id/caloriesTextView" />
+
+    <RatingBar
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dishRatingBar"
+        android:layout_alignBottom="@+id/dishModifierImageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:rating="3.5" />
+</RelativeLayout>
